@@ -7,17 +7,18 @@ CLASS zcl_test_enhs DEFINITION
     METHODS:
       run.
 
+protected section.
+private section.
 ENDCLASS.
 
 
 
-CLASS zcl_test_enhs IMPLEMENTATION.
+CLASS ZCL_TEST_ENHS IMPLEMENTATION.
+
 
   METHOD run.
 
-    ENHANCEMENT-POINT ztest_point SPOTS ztest_enhs.
+ENHANCEMENT-POINT ztest_point SPOTS zcl_test_enhs2 .
 
   ENDMETHOD.
-
-
 ENDCLASS.
